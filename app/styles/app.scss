@@ -1,0 +1,260 @@
+// The following sass variables were used to quickly modify the value of a property.
+$font: 'Bubbler One', sans-serif;
+$alternateFont: 'Josefin Sans', sans-serif;
+$fontColor: rgb(0,0,0);
+$alternateFontColor: rgb(255,255,255);
+$hoverEffect: rgb(118,228,219);
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*
+ * HEADER COMPONENT
+ */
+.headerContent{
+  margin: 16px 0;  // This adds a top & bottom margin to the header.
+
+  .companyIdentifiers {
+    display: inline-block;  // This allows the company identifiers and the nav bar to sit on the same line. A div element is normally a block-level element.
+
+    .companyLogo {
+      height: 80px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+      margin-right: 10px;  // This spaces out the company identifiers.
+    }
+
+    .companyName {
+      width: 475px;  // This adjusts the height of the company name.
+      position: relative;  // This is needed in order to use the "top" property.
+      top: 14px;  // This lines up the bottom of the company name with the company logo.
+    }
+  }
+
+  .navbar {
+    float: right;  // This positions the nav bar on the right side of the viewport.
+
+    a {
+      position: relative;  // This is needed in order to use the "top" property.
+      top: 49px;  // This lines up the bottom of the nav bar links with the company identifiers.
+      font-size: 30px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
+      font-family: $font;  // This uses a sass variable to determines the font of the nav bar links.
+      color: $fontColor;  // This uses a sass variable to determine the color of the nav bar links.
+      text-decoration: none;  // This removes the underline that links automatically come with.
+
+      &:hover {
+        border-bottom: 4px solid $hoverEffect;  // This adds a styled underline when the cursor hovers over a nav bar link.
+      }
+    }
+
+    .aboutUsNavLink,
+    .ourShopNavLink {
+      margin-left: 35px;  // This spaces out the nav bar links.
+    }
+  }
+}
+
+
+/*
+ * FOOTER COMPONENT
+ */
+.footer {
+  margin: 8px 0;  // This adds a top & bottom margin to the footer.
+
+  .socialIcons,
+  .contactInfo {
+    display: inline-block;  // This changes the display value of the "div" from block-level to inline-block so the social icons and the contact info sit on the same line.
+  }
+
+  .socialIcons {
+    .facebookIcon {
+      font-size: 35px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+      margin-right: 8px;  // This spaces out the social icons.
+    }
+
+    .instagramIcon {
+      font-size: 36px;  // This adjusts the size of the instagram icon.
+    }
+
+    .facebookIcon,
+    .instagramIcon {
+      color: $fontColor;  // This determines the color of the social icons.
+
+      &:hover {
+        color: $hoverEffect;  // This changes the color of the social icons when the cursor hovers over them.
+      }
+    }
+  }
+
+  .contactInfo {
+    font-size: 18px;  // This adjusts the size of the contact info.  The contact info is intentionally smaller than all other text.
+    font-family: $font;  // This determines the font of the contact info.
+    float: right;  // This positions the contact info on the right side of the viewport.
+    margin-top: 14px;  // This vertically centers the contact info to the social icons.
+
+    a {
+      text-decoration: none;  // This removes the underline that links automatically come with.
+      color: black;  // This determines the color of the contact info.
+
+      &:hover {
+        border-bottom: 4px solid $hoverEffect;  // This adds a styled underline when the cursor hovers over the contact info.
+      }
+    }
+
+    .phoneNumber {
+      margin-left: 30px;  // This spaces out the contact info.
+    }
+  }
+}
+
+
+/*
+ * HOMEPAGE COMPONENT
+ */
+.homepageBackgroundImage {
+  background-image: url('../images/homepageBackgroundImage.jpeg');  // This adds a background image to the homepage.
+  background-size: cover;  // This makes the entire background image visible instead just part of it.
+  background-repeat: no-repeat;  // This keeps the background image from repeating.
+  width: 100%;  // This makes the background image fill up its container.
+  height: 74vh;  // This determines how much of the background image is shown vertically.  I am using vertical height (vh) as my unit of measurement for 2 reasons... 1.) so that the image height adjusts when the viewport height changes & 2.) to contain the homepage within the viewport. The client didn't want the homepage to scroll (vertically or horizontally).
+}
+
+
+/*
+ * ABOUT US COMPONENT
+ */
+.aboutUsPage {
+  margin-bottom: 50px;
+  font-family: $font;  // This determines the font for all About Us content.
+  color: $fontColor;  // This determines the font color for all About Us content.
+  font-size: 20px;  // This adjusts the size of the About Us content.
+
+  .aboutUsImage {
+    margin-top: 40px;  // This spaces out the image and the blurb.
+    margin-bottom: 50px;  // This spaces out the image and the blurb.
+    // margin-top: 6vh;  // This spaces out the header and footer from the About Us content.
+    // margin-bottom: 8vh;
+  }
+
+  .aboutUsSection {
+    .blurb {
+      text-align: justify;  // This justifies the alignment of the blurb.
+      padding: 0 15px;
+
+      .blurbSpacing {
+        margin: 15px 0;  // This spaces out the blurb paragraphs.
+      }
+    }
+
+    .storeHours {
+      margin-top: 40px;  // This spaces out the store hours section from the blurb.
+      margin-bottom: -20px;
+      padding: 0 15px;
+
+      .storeHoursTitle,
+      .schedule {
+        padding: 0;  // This removes all padding from both the store hours title and schedule.
+      }
+
+      .storeHoursTitle {
+        text-transform: uppercase;  // This transforms the words "store hours" from lowercase to uppercase.
+        margin-bottom: 10px;  // This spaces out the title and the schedule.
+      }
+
+      .schedule {
+        list-style: none;  // Since the store hours were written with an unordered list (ul), the ul automotically inserts bullet points. This removes the bullet points.
+
+        .day {
+          padding: 0;  // This removes all padding from the days of the week.
+        }
+      }
+    }
+
+    // .contactInfo {
+    //   padding: 0 15px;
+    //
+    //   .title {
+    //     margin: 30px 0 12px 0;
+    //     padding: 0;
+    //     text-transform: uppercase;
+    //   }
+    //
+    //   .info {
+    //     a {
+    //       text-decoration: none;  // This removes the underline that links automatically come with.
+    //       padding: 0;  // This removes the padding from the contact info on the About Us page.
+    //       color: $fontColor;
+    //     }
+    //   }
+    // }
+    //
+    // .socialAccounts {
+    //   margin-top: 30px;
+    //   padding: 0 15px;
+    //
+    //   a {
+    //     text-decoration: none;
+    //     color: $hoverEffect;
+    //
+    //     &:hover {
+    //       border-bottom: 4px solid $hoverEffect;
+    //     }
+    //   }
+    // }
+  }
+}
+
+
+/*
+ * Our Shop Component
+ */
+.outsideOfShopImage {
+  padding-right: 7.5px;
+}
+
+.extendedMenuImage {
+  padding-left: 7.5px;
+}
+
+.backCounterImage {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.closeupOfEspressoMachingImage {
+  padding-right: 7.5px;
+}
+
+.pouringLatteImage {
+  padding-left: 7.5px;
+}
+
+.latteImage {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.mapOnWallImage {
+  padding-right: 7.5px;
+}
+
+.menuImage {
+  padding-left: 7.5px;
+}
+
+.menuBoardsImage {
+  padding-top: 15px;
+}
