@@ -4,6 +4,8 @@ $alternateFont: 'Josefin Sans', sans-serif;
 $fontColor: rgb(0,0,0);
 $alternateFontColor: rgb(255,255,255);
 $hoverEffect: rgb(118,228,219);
+$hoverFontColor: rgb(118,228,219);
+$hoverBackgroundColor: rgba(255,255,255,0.6);
 
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
@@ -63,6 +65,305 @@ img {
     .aboutUsNavLink,
     .ourShopNavLink {
       margin-left: 35px;  // This spaces out the nav bar links.
+    }
+  }
+
+  .mediaQuery650vwNavBarDropdown {
+    float: right;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    display: none;
+
+    &:hover {
+      color: $hoverEffect;
+    }
+
+    .dropdown-menu {
+      position: relative;
+      top: 31px;
+      left: 20px;
+      text-align: center;
+      min-width: 100px;
+      background-color: rgba(0,0,0,0);
+      border: none;
+      border-radius: 0;
+
+      .navLinks {
+        background-color: rgba(0,0,0,0.7);
+        color: $alternateFontColor;
+        font-family: $font;  // This uses a sass variable to determines the font of the nav bar links.
+        font-size: 17px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
+
+        &:hover {
+          background-color: $hoverBackgroundColor;
+          color: $fontColor;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .headerContent{
+    margin: 14px 0;  // This adds a top & bottom margin to the header.
+
+    .companyIdentifiers {
+      .companyLogo {
+        height: 65px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+      }
+
+      .companyName {
+        width: 400px;  // This adjusts the height of the company name.
+        top: 11px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .navbar {
+      a {
+        font-size: 26px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
+        top: 38px;  // This lines up the bottom of the nav bar links with the company identifiers.
+
+        &:hover {
+          border-bottom: 3px solid $hoverEffect;  // This adds a styled underline when the cursor hovers over a nav bar link.
+        }
+      }
+
+      .aboutUsNavLink,
+      .ourShopNavLink {
+        margin-left: 25px;  // This spaces out the nav bar links.
+      }
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .headerContent{
+    margin: 12px 0;  // This adds a top & bottom margin to the header.
+
+    .companyIdentifiers {
+      .companyLogo {
+        height: 50px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+        margin-right: 6px;  // This spaces out the company identifiers.
+      }
+
+      .companyName {
+        width: 300px;  // This adjusts the height of the company name.
+        top: 9px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .navbar {
+      a {
+        font-size: 22px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
+        top: 27px;  // This lines up the bottom of the nav bar links with the company identifiers.
+      }
+
+      .aboutUsNavLink,
+      .ourShopNavLink {
+        margin-left: 17px;  // This spaces out the nav bar links.
+      }
+    }
+  }
+}
+
+@media (max-width: 720px){
+  .headerContent{
+    margin: 10px 0;  // This adds a top & bottom margin to the header.
+
+    .companyIdentifiers {
+      .companyLogo {
+        height: 45px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+      }
+
+      .companyName {
+        width: 275px;  // This adjusts the height of the company name.
+        top: 8px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .navbar {
+      a {
+        font-size: 20px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
+        top: 24px;  // This lines up the bottom of the nav bar links with the company identifiers.
+      }
+
+      .aboutUsNavLink,
+      .ourShopNavLink {
+        margin-left: 12px;  // This spaces out the nav bar links.
+      }
+    }
+  }
+}
+
+@media (max-width: 650px){
+  .headerContent{
+    .companyIdentifiers {
+      .companyLogo {
+        height: 38px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+      }
+
+      .companyName {
+        width: 225px;  // This adjusts the height of the company name.
+        top: 6px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .mediaQuery650vwNavBarDropdown {
+      display: inline;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .headerContent{
+    .companyIdentifiers {
+      .companyLogo {
+        height: 34px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+      }
+
+      .companyName {
+        width: 200px;  // This adjusts the height of the company name.
+        top: 5px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .mediaQuery650vwNavBarDropdown {
+      top: 7px;
+    }
+  }
+}
+
+@media (max-width: 485px){
+  .headerContent{
+    .companyIdentifiers {
+      .companyLogo {
+        height: 32px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+      }
+
+      .companyName {
+        width: 195px;  // This adjusts the height of the company name.
+        top: 6px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .mediaQuery650vwNavBarDropdown {
+      top: 6px;
+      font-size: 24px;
+
+      .dropdown-menu {
+        top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .headerContent{
+    .companyIdentifiers {
+      .companyName {
+        width: 190px;  // This adjusts the height of the company name.
+        top: 4px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .mediaQuery650vwNavBarDropdown {
+      top: 7px;
+      font-size: 23px;
+
+      .dropdown-menu {
+        top: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px){
+  .headerContent{
+    .companyIdentifiers {
+      .companyName {
+        width: 180px;  // This adjusts the height of the company name.
+        top: 5px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .mediaQuery650vwNavBarDropdown {
+      top: 10px;
+      font-size: 21px;
+
+      .dropdown-menu {
+        top: 26px;
+        left: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .headerContent{
+    margin: 8px 0;  // This adds a top & bottom margin to the header.
+
+    .companyIdentifiers {
+      .companyLogo {
+        height: 28px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+      }
+
+      .companyName {
+        width: 160px;  // This adjusts the height of the company name.
+      }
+    }
+
+    .mediaQuery650vwNavBarDropdown {
+      top: 6px;
+
+      .dropdown-menu {
+        top: 20px;
+        left: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 340px){
+  .headerContent{
+    .mediaQuery650vwNavBarDropdown {
+      .dropdown-menu {
+        top: 19px;
+      }
+    }
+  }
+}
+
+@media (max-width: 333px){
+  .headerContent{
+    .companyIdentifiers {
+      .companyLogo {
+        height: 26px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+        margin-right: 4px;
+      }
+
+      .companyName {
+        width: 150px;  // This adjusts the height of the company name.
+        top: 4px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .mediaQuery650vwNavBarDropdown {
+      top: 8px;
+      font-size: 16px;
+
+      .dropdown-menu {
+        min-width: 90px;
+        left: 14px;
+
+        .navLinks {
+          font-size: 15px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
+        }
+      }
     }
   }
 }
@@ -129,6 +430,7 @@ img {
   background-size: cover;  // This makes the entire background image visible instead just part of it.
   background-repeat: no-repeat;  // This keeps the background image from repeating.
   width: 100%;  // This makes the background image fill up its container.
+  // padding: 0;
   height: 74vh;  // This determines how much of the background image is shown vertically.  I am using vertical height (vh) as my unit of measurement for 2 reasons... 1.) so that the image height adjusts when the viewport height changes & 2.) to contain the homepage within the viewport. The client didn't want the homepage to scroll (vertically or horizontally).
 }
 
