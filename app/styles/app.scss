@@ -489,7 +489,7 @@ img {
   .footer {
     .socialIcons {
       .icon {
-        font-size: 36px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+        font-size: 40px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
       }
     }
 
@@ -510,12 +510,12 @@ img {
       }
 
       .locationIcon {
-        font-size: 36px;
+        font-size: 40px;
         margin: 0 8px;
       }
 
       .cellPhoneIcon {
-        font-size: 41px;
+        font-size: 45px;
         position: relative;
         top: 2px;
       }
@@ -523,25 +523,25 @@ img {
   }
 }
 
-@media (max-width: 425px){
-  .footer {
-    .socialIcons {
-      .icon {
-        font-size: 32px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
-      }
-    }
-
-    .contactInfoIcons {
-      .locationIcon {
-        font-size: 32px;
-      }
-
-      .cellPhoneIcon {
-        font-size: 37px;
-      }
-    }
-  }
-}
+// @media (max-width: 425px){
+//   .footer {
+//     .socialIcons {
+//       .icon {
+//         font-size: 32px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+//       }
+//     }
+//
+//     .contactInfoIcons {
+//       .locationIcon {
+//         font-size: 32px;
+//       }
+//
+//       .cellPhoneIcon {
+//         font-size: 37px;
+//       }
+//     }
+//   }
+// }
 
 
 /*
