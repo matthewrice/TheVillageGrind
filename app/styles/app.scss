@@ -72,7 +72,7 @@ img {
     float: right;
     font-size: 25px;
     position: relative;
-    top: 10px;
+    top: 12px;
     display: none;
 
     &:hover {
@@ -81,8 +81,8 @@ img {
 
     .dropdown-menu {
       position: relative;
-      top: 31px;
-      left: 20px;
+      top: 29px;
+      left: 21px;
       text-align: center;
       min-width: 100px;
       background-color: rgba(0,0,0,0);
@@ -233,7 +233,7 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 7px;
+      top: 8px;
     }
   }
 }
@@ -253,10 +253,9 @@ img {
 
     .mediaQuery650vwNavBarDropdown {
       top: 6px;
-      font-size: 24px;
 
       .dropdown-menu {
-        top: 30px;
+        top: 29px;
       }
     }
   }
@@ -272,11 +271,8 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 7px;
-      font-size: 23px;
-
       .dropdown-menu {
-        top: 28px;
+        top: 30px;
       }
     }
   }
@@ -292,12 +288,12 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 10px;
-      font-size: 21px;
+      top: 8px;
+      font-size: 23px;
 
       .dropdown-menu {
-        top: 26px;
-        left: 18px;
+        top: 27px;
+        left: 20px;
       }
     }
   }
@@ -305,7 +301,7 @@ img {
 
 @media (max-width: 375px){
   .headerContent{
-    margin: 8px 0;  // This adds a top & bottom margin to the header.
+    margin: 9px 0;  // This adds a top & bottom margin to the header.
 
     .companyIdentifiers {
       .companyLogo {
@@ -318,21 +314,10 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 6px;
+      top: 4px;
 
       .dropdown-menu {
-        top: 20px;
-        left: 18px;
-      }
-    }
-  }
-}
-
-@media (max-width: 340px){
-  .headerContent{
-    .mediaQuery650vwNavBarDropdown {
-      .dropdown-menu {
-        top: 19px;
+        top: 26px;
       }
     }
   }
@@ -353,12 +338,10 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 8px;
-      font-size: 16px;
+      top: 2px;
 
       .dropdown-menu {
         min-width: 90px;
-        left: 14px;
 
         .navLinks {
           font-size: 15px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
@@ -367,6 +350,66 @@ img {
     }
   }
 }
+
+@media (max-width: 313px){
+  .headerContent{
+    .companyIdentifiers {
+      .companyLogo {
+        height: 25px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+        margin-right: 3px;
+      }
+
+      .companyName {
+        width: 140px;  // This adjusts the height of the company name.
+        top: 5px;  // This lines up the bottom of the company name with the company logo.
+      }
+    }
+
+    .mediaQuery650vwNavBarDropdown {
+      top: 4px;
+      font-size: 20px;
+
+      .dropdown-menu {
+        top: 23px;
+        left: 17px;
+
+        .navLinks {
+          font-size: 15px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 299px){
+//   .headerContent{
+//     .companyIdentifiers {
+//       .companyLogo {
+//         height: 25px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
+//         margin-right: 3px;
+//       }
+//
+//       .companyName {
+//         width: 140px;  // This adjusts the height of the company name.
+//         top: 5px;  // This lines up the bottom of the company name with the company logo.
+//       }
+//     }
+//
+//     .mediaQuery650vwNavBarDropdown {
+//       top: 4px;
+//       font-size: 20px;
+//
+//       .dropdown-menu {
+//         top: 23px;
+//         left: 17px;
+//
+//         .navLinks {
+//           font-size: 15px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
+//         }
+//       }
+//     }
+//   }
+// }
 
 
 /*
@@ -419,7 +462,169 @@ img {
       margin-left: 30px;  // This spaces out the contact info.
     }
   }
+
+  .contactInfoIcons {
+    display: none;
+  }
 }
+
+@media (max-width: 991px){
+  .footer {
+    margin: 5px 0;  // This adds a top & bottom margin to the footer.
+
+    .socialIcons {
+      .icon {
+        font-size: 32px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+      }
+    }
+
+    .contactInfo {
+      font-size: 16px;  // This adjusts the size of the contact info.  The contact info is intentionally smaller than all other text.
+      margin-top: 12px;  // This vertically centers the contact info to the social icons.
+
+      a {
+        &:hover {
+          border-bottom: 3px solid $hoverEffect;  // This adds a styled underline when the cursor hovers over the contact info.
+        }
+      }
+
+      .phoneNumber {
+        margin-left: 20px;  // This spaces out the contact info.
+      }
+    }
+  }
+}
+
+@media (max-width: 720px){
+  .footer {
+    margin: 3px 0;  // This adds a top & bottom margin to the footer.
+
+    .contactInfo {
+      font-size: 15px;  // This adjusts the size of the contact info.  The contact info is intentionally smaller than all other text.
+
+      .phoneNumber {
+        margin-left: 18px;  // This spaces out the contact info.
+      }
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .footer {
+    .contactInfo {
+      font-size: 14px;  // This adjusts the size of the contact info.  The contact info is intentionally smaller than all other text.
+      margin-top: 13px;  // This vertically centers the contact info to the social icons.
+    }
+  }
+}
+
+@media (max-width: 485px){
+  .footer {
+    .socialIcons {
+      .icon {
+        font-size: 32px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+      }
+    }
+
+    .contactInfo {
+      display: none;
+    }
+
+    .contactInfoIcons {
+      display: inline-block;
+      margin-top: -5px;  // This vertically centers the contact info to the social icons.
+
+      .icon {
+        color: $fontColor;  // This determines the color of the social icons.
+
+        &:hover {
+          color: $hoverEffect;  // This changes the color of the social icons when the cursor hovers over them.
+        }
+      }
+
+      .locationIcon {
+        font-size: 32px;
+        margin: 0 8px;
+      }
+
+      .cellPhoneIcon {
+        font-size: 37px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px){
+  .footer {
+    .socialIcons {
+      .icon {
+        font-size: 28px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+      }
+    }
+
+    .contactInfoIcons {
+      .locationIcon {
+        font-size: 28px;
+      }
+
+      .cellPhoneIcon {
+        font-size: 33px;
+      }
+    }
+  }
+}
+
+@media (max-width: 313px){
+  .footer {
+    .socialIcons {
+      .facebookIcon {
+        margin-right: 10px;  // This spaces out the social icons.
+      }
+
+      .icon {
+        font-size: 25px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+      }
+    }
+
+    .contactInfoIcons {
+      .locationIcon {
+        font-size: 25px;
+        margin: 0 10px;
+      }
+
+      .cellPhoneIcon {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+// @media (max-width: 299px){
+//   .footer {
+//     .socialIcons {
+//       .facebookIcon {
+//         margin-right: 10px;  // This spaces out the social icons.
+//       }
+//
+//       .icon {
+//         font-size: 25px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+//       }
+//     }
+//
+//     .contactInfoIcons {
+//       .locationIcon {
+//         font-size: 25px;
+//         margin: 0 10px;
+//       }
+//
+//       .cellPhoneIcon {
+//         font-size: 30px;
+//       }
+//     }
+//   }
+// }
 
 
 /*
@@ -430,8 +635,25 @@ img {
   background-size: cover;  // This makes the entire background image visible instead just part of it.
   background-repeat: no-repeat;  // This keeps the background image from repeating.
   width: 100%;  // This makes the background image fill up its container.
-  // padding: 0;
   height: 74vh;  // This determines how much of the background image is shown vertically.  I am using vertical height (vh) as my unit of measurement for 2 reasons... 1.) so that the image height adjusts when the viewport height changes & 2.) to contain the homepage within the viewport. The client didn't want the homepage to scroll (vertically or horizontally).
+}
+
+@media (max-width: 720px) {
+  .homepageBackgroundImage {
+    background-image: url('../images/homepageBackgroundImageVW720px.jpg');  // This adds a background image to the homepage.
+  }
+}
+
+@media (max-width: 600px) {
+  .homepageBackgroundImage {
+    background-image: url('../images/homepageBackgroundImageVW600px.jpg');  // This adds a background image to the homepage.
+  }
+}
+
+@media (max-width: 425px) {
+  .homepageBackgroundImage {
+    background-image: url('../images/homepageBackgroundImageVW425px.jpg');  // This adds a background image to the homepage.
+  }
 }
 
 
