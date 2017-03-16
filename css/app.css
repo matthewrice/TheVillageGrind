@@ -6004,7 +6004,7 @@ img {
     margin-top: 13px; } }
 @media (max-width: 485px) {
   .footer .socialIcons .icon {
-    font-size: 36px; }
+    font-size: 40px; }
   .footer .contactInfo {
     display: none; }
   .footer .contactInfoIcons {
@@ -6015,19 +6015,12 @@ img {
       .footer .contactInfoIcons .icon:hover {
         color: #76e4db; }
     .footer .contactInfoIcons .locationIcon {
-      font-size: 36px;
+      font-size: 40px;
       margin: 0 8px; }
     .footer .contactInfoIcons .cellPhoneIcon {
-      font-size: 41px;
+      font-size: 45px;
       position: relative;
       top: 2px; } }
-@media (max-width: 425px) {
-  .footer .socialIcons .icon {
-    font-size: 32px; }
-  .footer .contactInfoIcons .locationIcon {
-    font-size: 32px; }
-  .footer .contactInfoIcons .cellPhoneIcon {
-    font-size: 37px; } }
 /*
  * HOMEPAGE COMPONENT
  */
