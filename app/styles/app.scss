@@ -70,9 +70,9 @@ img {
 
   .mediaQuery650vwNavBarDropdown {
     float: right;
-    font-size: 25px;
+    font-size: 29px;
     position: relative;
-    top: 12px;
+    top: 8px;
     display: none;
 
     &:hover {
@@ -81,8 +81,8 @@ img {
 
     .dropdown-menu {
       position: relative;
-      top: 29px;
-      left: 21px;
+      top: 33px;
+      left: 25px;
       text-align: center;
       min-width: 100px;
       background-color: rgba(0,0,0,0);
@@ -233,7 +233,7 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 8px;
+      top: 4px;
     }
   }
 }
@@ -252,10 +252,10 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 6px;
+      top: 2px;
 
       .dropdown-menu {
-        top: 29px;
+        top: 33px;
       }
     }
   }
@@ -288,12 +288,8 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 8px;
-      font-size: 23px;
-
       .dropdown-menu {
-        top: 27px;
-        left: 20px;
+        top: 33px;
       }
     }
   }
@@ -314,10 +310,11 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 4px;
+      font-size: 25px;
 
       .dropdown-menu {
-        top: 26px;
+        top: 28px;
+        left: 21px;
       }
     }
   }
@@ -338,7 +335,7 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 2px;
+      top: 0;
 
       .dropdown-menu {
         min-width: 90px;
@@ -380,36 +377,6 @@ img {
     }
   }
 }
-
-// @media (max-width: 299px){
-//   .headerContent{
-//     .companyIdentifiers {
-//       .companyLogo {
-//         height: 25px;  // This adjusts the height of the company logo. It is intentionally taller than the company name.
-//         margin-right: 3px;
-//       }
-//
-//       .companyName {
-//         width: 140px;  // This adjusts the height of the company name.
-//         top: 5px;  // This lines up the bottom of the company name with the company logo.
-//       }
-//     }
-//
-//     .mediaQuery650vwNavBarDropdown {
-//       top: 4px;
-//       font-size: 20px;
-//
-//       .dropdown-menu {
-//         top: 23px;
-//         left: 17px;
-//
-//         .navLinks {
-//           font-size: 15px;  // This adjusts the size of the nav bar links. They are intentionally smaller than the company identifiers.
-//         }
-//       }
-//     }
-//   }
-// }
 
 
 /*
@@ -522,7 +489,7 @@ img {
   .footer {
     .socialIcons {
       .icon {
-        font-size: 32px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+        font-size: 36px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
       }
     }
 
@@ -543,12 +510,12 @@ img {
       }
 
       .locationIcon {
-        font-size: 32px;
+        font-size: 36px;
         margin: 0 8px;
       }
 
       .cellPhoneIcon {
-        font-size: 37px;
+        font-size: 41px;
         position: relative;
         top: 2px;
       }
@@ -560,71 +527,21 @@ img {
   .footer {
     .socialIcons {
       .icon {
-        font-size: 28px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+        font-size: 32px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
       }
     }
 
     .contactInfoIcons {
       .locationIcon {
-        font-size: 28px;
+        font-size: 32px;
       }
 
       .cellPhoneIcon {
-        font-size: 33px;
+        font-size: 37px;
       }
     }
   }
 }
-
-@media (max-width: 313px){
-  .footer {
-    .socialIcons {
-      .facebookIcon {
-        margin-right: 10px;  // This spaces out the social icons.
-      }
-
-      .icon {
-        font-size: 25px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
-      }
-    }
-
-    .contactInfoIcons {
-      .locationIcon {
-        font-size: 25px;
-        margin: 0 10px;
-      }
-
-      .cellPhoneIcon {
-        font-size: 30px;
-      }
-    }
-  }
-}
-
-// @media (max-width: 299px){
-//   .footer {
-//     .socialIcons {
-//       .facebookIcon {
-//         margin-right: 10px;  // This spaces out the social icons.
-//       }
-//
-//       .icon {
-//         font-size: 25px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
-//       }
-//     }
-//
-//     .contactInfoIcons {
-//       .locationIcon {
-//         font-size: 25px;
-//         margin: 0 10px;
-//       }
-//
-//       .cellPhoneIcon {
-//         font-size: 30px;
-//       }
-//     }
-//   }
-// }
 
 
 /*
@@ -638,21 +555,27 @@ img {
   height: 74vh;  // This determines how much of the background image is shown vertically.  I am using vertical height (vh) as my unit of measurement for 2 reasons... 1.) so that the image height adjusts when the viewport height changes & 2.) to contain the homepage within the viewport. The client didn't want the homepage to scroll (vertically or horizontally).
 }
 
-@media (max-width: 720px) {
+// This replaces the background image on the homepage with a cropped version
+// once the viewport width has been minimized to 991px.
+@media (max-width: 991px) {
   .homepageBackgroundImage {
-    background-image: url('../images/homepageBackgroundImageVW720px.jpg');  // This adds a background image to the homepage.
+    background-image: url('../images/homepageBackgroundImageVW991px.jpg');
   }
 }
 
+// This replaces the background image on the homepage with a cropped version
+// once the viewport width has been minimized to 600px.
 @media (max-width: 600px) {
   .homepageBackgroundImage {
-    background-image: url('../images/homepageBackgroundImageVW600px.jpg');  // This adds a background image to the homepage.
+    background-image: url('../images/homepageBackgroundImageVW600px.jpg');
   }
 }
 
+// This replaces the background image on the homepage with a cropped version
+// once the viewport width has been minimized to 425px.
 @media (max-width: 425px) {
   .homepageBackgroundImage {
-    background-image: url('../images/homepageBackgroundImageVW425px.jpg');  // This adds a background image to the homepage.
+    background-image: url('../images/homepageBackgroundImageVW425px.jpg');
   }
 }
 
