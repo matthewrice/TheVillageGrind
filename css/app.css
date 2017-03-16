@@ -5796,16 +5796,16 @@ img {
       margin-left: 35px; }
   .headerContent .mediaQuery650vwNavBarDropdown {
     float: right;
-    font-size: 25px;
+    font-size: 29px;
     position: relative;
-    top: 12px;
+    top: 8px;
     display: none; }
     .headerContent .mediaQuery650vwNavBarDropdown:hover {
       color: #76e4db; }
     .headerContent .mediaQuery650vwNavBarDropdown .dropdown-menu {
       position: relative;
-      top: 29px;
-      left: 21px;
+      top: 33px;
+      left: 25px;
       text-align: center;
       min-width: 100px;
       background-color: transparent;
@@ -5882,7 +5882,7 @@ img {
     width: 200px;
     top: 5px; }
   .headerContent .mediaQuery650vwNavBarDropdown {
-    top: 8px; } }
+    top: 4px; } }
 @media (max-width: 485px) {
   .headerContent .companyIdentifiers .companyLogo {
     height: 32px; }
@@ -5890,9 +5890,9 @@ img {
     width: 195px;
     top: 6px; }
   .headerContent .mediaQuery650vwNavBarDropdown {
-    top: 6px; }
+    top: 2px; }
     .headerContent .mediaQuery650vwNavBarDropdown .dropdown-menu {
-      top: 29px; } }
+      top: 33px; } }
 @media (max-width: 450px) {
   .headerContent .companyIdentifiers .companyName {
     width: 190px;
@@ -5903,12 +5903,8 @@ img {
   .headerContent .companyIdentifiers .companyName {
     width: 180px;
     top: 5px; }
-  .headerContent .mediaQuery650vwNavBarDropdown {
-    top: 8px;
-    font-size: 23px; }
-    .headerContent .mediaQuery650vwNavBarDropdown .dropdown-menu {
-      top: 27px;
-      left: 20px; } }
+  .headerContent .mediaQuery650vwNavBarDropdown .dropdown-menu {
+    top: 33px; } }
 @media (max-width: 375px) {
   .headerContent {
     margin: 9px 0; }
@@ -5917,9 +5913,10 @@ img {
     .headerContent .companyIdentifiers .companyName {
       width: 160px; }
     .headerContent .mediaQuery650vwNavBarDropdown {
-      top: 4px; }
+      font-size: 25px; }
       .headerContent .mediaQuery650vwNavBarDropdown .dropdown-menu {
-        top: 26px; } }
+        top: 28px;
+        left: 21px; } }
 @media (max-width: 333px) {
   .headerContent .companyIdentifiers .companyLogo {
     height: 26px;
@@ -5928,7 +5925,7 @@ img {
     width: 150px;
     top: 4px; }
   .headerContent .mediaQuery650vwNavBarDropdown {
-    top: 2px; }
+    top: 0; }
     .headerContent .mediaQuery650vwNavBarDropdown .dropdown-menu {
       min-width: 90px; }
       .headerContent .mediaQuery650vwNavBarDropdown .dropdown-menu .navLinks {
@@ -6007,7 +6004,7 @@ img {
     margin-top: 13px; } }
 @media (max-width: 485px) {
   .footer .socialIcons .icon {
-    font-size: 32px; }
+    font-size: 36px; }
   .footer .contactInfo {
     display: none; }
   .footer .contactInfoIcons {
@@ -6018,29 +6015,19 @@ img {
       .footer .contactInfoIcons .icon:hover {
         color: #76e4db; }
     .footer .contactInfoIcons .locationIcon {
-      font-size: 32px;
+      font-size: 36px;
       margin: 0 8px; }
     .footer .contactInfoIcons .cellPhoneIcon {
-      font-size: 37px;
+      font-size: 41px;
       position: relative;
       top: 2px; } }
 @media (max-width: 425px) {
   .footer .socialIcons .icon {
-    font-size: 28px; }
+    font-size: 32px; }
   .footer .contactInfoIcons .locationIcon {
-    font-size: 28px; }
+    font-size: 32px; }
   .footer .contactInfoIcons .cellPhoneIcon {
-    font-size: 33px; } }
-@media (max-width: 313px) {
-  .footer .socialIcons .facebookIcon {
-    margin-right: 10px; }
-  .footer .socialIcons .icon {
-    font-size: 25px; }
-  .footer .contactInfoIcons .locationIcon {
-    font-size: 25px;
-    margin: 0 10px; }
-  .footer .contactInfoIcons .cellPhoneIcon {
-    font-size: 30px; } }
+    font-size: 37px; } }
 /*
  * HOMEPAGE COMPONENT
  */
@@ -6051,9 +6038,9 @@ img {
   width: 100%;
   height: 74vh; }
 
-@media (max-width: 720px) {
+@media (max-width: 991px) {
   .homepageBackgroundImage {
-    background-image: url("../images/homepageBackgroundImageVW720px.jpg"); } }
+    background-image: url("../images/homepageBackgroundImageVW991px.jpg"); } }
 @media (max-width: 600px) {
   .homepageBackgroundImage {
     background-image: url("../images/homepageBackgroundImageVW600px.jpg"); } }
