@@ -5949,7 +5949,8 @@ img {
  * FOOTER COMPONENT
  */
 .footer {
-  margin: 8px 0; }
+  margin: 8px 0;
+  padding: 0; }
   .footer .socialIcons,
   .footer .contactInfo {
     display: inline-block; }
@@ -6049,28 +6050,110 @@ img {
   color: black;
   font-size: 20px; }
   .aboutUsPage .aboutUsImage {
-    margin-top: 40px;
-    margin-bottom: 50px; }
-  .aboutUsPage .aboutUsSection .blurb {
-    text-align: justify;
-    padding: 0 15px; }
-    .aboutUsPage .aboutUsSection .blurb .blurbSpacing {
-      margin: 15px 0; }
-  .aboutUsPage .aboutUsSection .storeHours {
-    margin-top: 40px;
-    margin-bottom: -20px;
-    padding: 0 15px; }
-    .aboutUsPage .aboutUsSection .storeHours .storeHoursTitle,
-    .aboutUsPage .aboutUsSection .storeHours .schedule {
-      padding: 0; }
-    .aboutUsPage .aboutUsSection .storeHours .storeHoursTitle {
-      text-transform: uppercase;
-      margin-bottom: 10px; }
-    .aboutUsPage .aboutUsSection .storeHours .schedule {
-      list-style: none; }
-      .aboutUsPage .aboutUsSection .storeHours .schedule .day {
-        padding: 0; }
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-image: url("../images/about-us-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 72vh; }
+  .aboutUsPage .aboutUsSection {
+    padding: 0; }
+    .aboutUsPage .aboutUsSection .blurb {
+      text-align: justify; }
+      .aboutUsPage .aboutUsSection .blurb .blurbSpacing {
+        margin: 15px 0; }
+    .aboutUsPage .aboutUsSection .storeHours {
+      margin-top: 60px;
+      margin-bottom: 30px; }
+      .aboutUsPage .aboutUsSection .storeHours .storeHoursTitle {
+        text-transform: uppercase;
+        font-size: 22px; }
+      .aboutUsPage .aboutUsSection .storeHours .schedule {
+        margin-top: 7px; }
+        .aboutUsPage .aboutUsSection .storeHours .schedule .weekday {
+          padding-right: 30px; }
+        .aboutUsPage .aboutUsSection .storeHours .schedule .saturday {
+          padding-right: 82px; }
+        .aboutUsPage .aboutUsSection .storeHours .schedule .sunday {
+          padding-right: 95px; }
+        .aboutUsPage .aboutUsSection .storeHours .schedule .arrowIcon {
+          font-size: 20px;
+          padding-right: 26px; }
+        .aboutUsPage .aboutUsSection .storeHours .schedule .sundayArrowIcon {
+          padding-right: 19px; }
 
+@media (max-width: 1200px) {
+  .aboutUsPage .aboutUsImage {
+    height: 60vh; } }
+@media (max-width: 991px) {
+  .aboutUsPage .aboutUsImage {
+    margin-top: 0;
+    margin-bottom: 20px; } }
+@media (max-width: 650px) {
+  .aboutUsPage .aboutUsImage {
+    height: 58vh; } }
+@media (max-width: 625px) {
+  .aboutUsPage .aboutUsImage {
+    height: 57vh; } }
+@media (max-width: 600px) {
+  .aboutUsPage .aboutUsImage {
+    height: 56vh; } }
+@media (max-width: 575px) {
+  .aboutUsPage .aboutUsImage {
+    height: 50vh; } }
+@media (max-width: 550px) {
+  .aboutUsPage .aboutUsImage {
+    height: 48vh; } }
+@media (max-width: 525px) {
+  .aboutUsPage .aboutUsImage {
+    height: 46vh; } }
+@media (max-width: 500px) {
+  .aboutUsPage .aboutUsImage {
+    height: 42vh; } }
+@media (max-width: 475px) {
+  .aboutUsPage .aboutUsImage {
+    height: 40vh; } }
+@media (max-width: 450px) {
+  .aboutUsPage .aboutUsImage {
+    height: 38vh; } }
+@media (max-width: 425px) {
+  .aboutUsPage .aboutUsImage {
+    height: 36vh; } }
+@media (max-width: 400px) {
+  .aboutUsPage .aboutUsImage {
+    height: 34vh; } }
+@media (max-width: 375px) {
+  .aboutUsPage .aboutUsImage {
+    height: 32vh; } }
+@media (max-width: 350px) {
+  .aboutUsPage .aboutUsImage {
+    height: 30vh; } }
+@media (max-width: 325px) {
+  .aboutUsPage .aboutUsImage {
+    height: 28vh; } }
+@media (max-width: 300px) {
+  .aboutUsPage .aboutUsImage {
+    height: 26vh; } }
+@media (max-width: 991px) {
+  .aboutUsPage {
+    margin-bottom: 0;
+    font-size: 18px; }
+    .aboutUsPage .aboutUsSection .blurb .blurbSpacing {
+      margin: 10px 0; }
+    .aboutUsPage .aboutUsSection .storeHours {
+      margin-top: 30px; }
+      .aboutUsPage .aboutUsSection .storeHours .storeHoursTitle {
+        font-size: 20px; }
+      .aboutUsPage .aboutUsSection .storeHours .schedule {
+        margin-top: 0; }
+        .aboutUsPage .aboutUsSection .storeHours .schedule .saturday {
+          padding-right: 77px; }
+        .aboutUsPage .aboutUsSection .storeHours .schedule .sunday {
+          padding-right: 88px; }
+        .aboutUsPage .aboutUsSection .storeHours .schedule .arrowIcon {
+          font-size: 18px; }
+        .aboutUsPage .aboutUsSection .storeHours .schedule .sundayArrowIconMediaQuery991px {
+          padding-right: 20px; } }
 /*
  * Our Shop Component
  */
