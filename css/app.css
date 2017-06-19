@@ -6005,7 +6005,7 @@ img {
     margin-top: 13px; } }
 @media (max-width: 485px) {
   .footer .socialIcons .icon {
-    font-size: 40px; }
+    font-size: 30px; }
   .footer .contactInfo {
     display: none; }
   .footer .contactInfoIcons {
@@ -6016,10 +6016,10 @@ img {
       .footer .contactInfoIcons .icon:hover {
         color: #76e4db; }
     .footer .contactInfoIcons .locationIcon {
-      font-size: 40px;
+      font-size: 30px;
       margin: 0 8px; }
     .footer .contactInfoIcons .cellPhoneIcon {
-      font-size: 45px;
+      font-size: 35px;
       position: relative;
       top: 2px; } }
 /*
@@ -6055,7 +6055,7 @@ img {
     background-image: url("../images/about-us-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 72vh; }
+    height: 515px; }
   .aboutUsPage .aboutUsSection {
     padding: 0; }
     .aboutUsPage .aboutUsSection .blurb {
@@ -6084,56 +6084,81 @@ img {
 
 @media (max-width: 1200px) {
   .aboutUsPage .aboutUsImage {
-    height: 60vh; } }
+    height: 400px; } }
 @media (max-width: 991px) {
   .aboutUsPage .aboutUsImage {
     margin-top: 0;
-    margin-bottom: 20px; } }
-@media (max-width: 650px) {
+    margin-bottom: 20px;
+    height: 480px; } }
+@media (max-width: 740px) {
   .aboutUsPage .aboutUsImage {
-    height: 58vh; } }
-@media (max-width: 625px) {
+    height: 460px; } }
+@media (max-width: 720px) {
   .aboutUsPage .aboutUsImage {
-    height: 57vh; } }
+    height: 450px; } }
+@media (max-width: 700px) {
+  .aboutUsPage .aboutUsImage {
+    height: 440px; } }
+@media (max-width: 680px) {
+  .aboutUsPage .aboutUsImage {
+    height: 430px; } }
+@media (max-width: 660px) {
+  .aboutUsPage .aboutUsImage {
+    height: 420px; } }
+@media (max-width: 640px) {
+  .aboutUsPage .aboutUsImage {
+    height: 410px; } }
+@media (max-width: 620px) {
+  .aboutUsPage .aboutUsImage {
+    height: 390px; } }
 @media (max-width: 600px) {
   .aboutUsPage .aboutUsImage {
-    height: 56vh; } }
-@media (max-width: 575px) {
+    height: 380px; } }
+@media (max-width: 580px) {
   .aboutUsPage .aboutUsImage {
-    height: 50vh; } }
-@media (max-width: 550px) {
+    height: 370px; } }
+@media (max-width: 560px) {
   .aboutUsPage .aboutUsImage {
-    height: 48vh; } }
-@media (max-width: 525px) {
+    height: 350px; } }
+@media (max-width: 540px) {
   .aboutUsPage .aboutUsImage {
-    height: 46vh; } }
+    height: 340px; } }
+@media (max-width: 520px) {
+  .aboutUsPage .aboutUsImage {
+    height: 330px; } }
 @media (max-width: 500px) {
   .aboutUsPage .aboutUsImage {
-    height: 42vh; } }
-@media (max-width: 475px) {
+    height: 310px; } }
+@media (max-width: 480px) {
   .aboutUsPage .aboutUsImage {
-    height: 40vh; } }
-@media (max-width: 450px) {
+    height: 300px; } }
+@media (max-width: 460px) {
   .aboutUsPage .aboutUsImage {
-    height: 38vh; } }
-@media (max-width: 425px) {
+    height: 280px; } }
+@media (max-width: 440px) {
   .aboutUsPage .aboutUsImage {
-    height: 36vh; } }
+    height: 270px; } }
+@media (max-width: 420px) {
+  .aboutUsPage .aboutUsImage {
+    height: 260px; } }
 @media (max-width: 400px) {
   .aboutUsPage .aboutUsImage {
-    height: 34vh; } }
-@media (max-width: 375px) {
+    height: 240px; } }
+@media (max-width: 380px) {
   .aboutUsPage .aboutUsImage {
-    height: 32vh; } }
-@media (max-width: 350px) {
+    height: 230px; } }
+@media (max-width: 360px) {
   .aboutUsPage .aboutUsImage {
-    height: 30vh; } }
-@media (max-width: 325px) {
+    height: 220px; } }
+@media (max-width: 340px) {
   .aboutUsPage .aboutUsImage {
-    height: 28vh; } }
+    height: 200px; } }
+@media (max-width: 320px) {
+  .aboutUsPage .aboutUsImage {
+    height: 190px; } }
 @media (max-width: 300px) {
   .aboutUsPage .aboutUsImage {
-    height: 26vh; } }
+    height: 180px; } }
 @media (max-width: 991px) {
   .aboutUsPage {
     margin-bottom: 0;
