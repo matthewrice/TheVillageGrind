@@ -6179,6 +6179,17 @@ img {
           font-size: 18px; }
         .aboutUsPage .aboutUsSection .storeHours .schedule .sundayArrowIconMediaQuery991px {
           padding-right: 20px; } }
+@media (max-width: 600px) {
+  .aboutUsPage {
+    font-size: 16px; }
+    .aboutUsPage .aboutUsSection .storeHours .storeHoursTitle {
+      font-size: 18px; }
+    .aboutUsPage .aboutUsSection .storeHours .schedule .saturday {
+      padding-right: 72px; }
+    .aboutUsPage .aboutUsSection .storeHours .schedule .sunday {
+      padding-right: 82px; }
+    .aboutUsPage .aboutUsSection .storeHours .schedule .arrowIcon {
+      font-size: 16px; } }
 /*
  * Our Shop Component
  */
