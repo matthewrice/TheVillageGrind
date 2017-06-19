@@ -4,7 +4,7 @@ var React = require('react');
 var FooterComponent = React.createClass ({
   render: function(){
     return (
-      <div className="footer">
+      <div className="col-md-12 footer">
         <div className="socialIcons">
           <a className="facebookIcon icon" href="https://www.facebook.com/thevillagegrind/" target="_blank">
             {/*<div className="facebookIcon"></div>*/}

@@ -384,6 +384,7 @@ img {
  */
 .footer {
   margin: 8px 0;  // This adds a top & bottom margin to the footer.
+  padding: 0;
 
   .socialIcons,
   .contactInfo {
@@ -523,26 +524,6 @@ img {
   }
 }
 
-// @media (max-width: 425px){
-//   .footer {
-//     .socialIcons {
-//       .icon {
-//         font-size: 32px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
-//       }
-//     }
-//
-//     .contactInfoIcons {
-//       .locationIcon {
-//         font-size: 32px;
-//       }
-//
-//       .cellPhoneIcon {
-//         font-size: 37px;
-//       }
-//     }
-//   }
-// }
-
 
 /*
  * HOMEPAGE COMPONENT
@@ -590,16 +571,19 @@ img {
   font-size: 20px;  // This adjusts the size of the About Us content.
 
   .aboutUsImage {
-    margin-top: 40px;  // This spaces out the image and the blurb.
-    margin-bottom: 50px;  // This spaces out the image and the blurb.
-    // margin-top: 6vh;  // This spaces out the header and footer from the About Us content.
-    // margin-bottom: 8vh;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-image: url('../images/about-us-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 72vh;
   }
 
   .aboutUsSection {
+    padding: 0;
+
     .blurb {
       text-align: justify;  // This justifies the alignment of the blurb.
-      padding: 0 15px;
 
       .blurbSpacing {
         margin: 15px 0;  // This spaces out the blurb paragraphs.
@@ -607,62 +591,249 @@ img {
     }
 
     .storeHours {
-      margin-top: 40px;  // This spaces out the store hours section from the blurb.
-      margin-bottom: -20px;
-      padding: 0 15px;
-
-      .storeHoursTitle,
-      .schedule {
-        padding: 0;  // This removes all padding from both the store hours title and schedule.
-      }
+      margin-top: 60px;  // This spaces out the store hours section from the blurb.
+      margin-bottom: 30px;
 
       .storeHoursTitle {
+        // text-decoration: underline;
         text-transform: uppercase;  // This transforms the words "store hours" from lowercase to uppercase.
-        margin-bottom: 10px;  // This spaces out the title and the schedule.
+        font-size: 22px;
       }
 
       .schedule {
-        list-style: none;  // Since the store hours were written with an unordered list (ul), the ul automotically inserts bullet points. This removes the bullet points.
+        margin-top: 7px;
 
-        .day {
-          padding: 0;  // This removes all padding from the days of the week.
+        .weekday {
+          padding-right: 30px;
+        }
+
+        .saturday {
+          padding-right: 82px;
+        }
+
+        .sunday {
+          padding-right: 95px;
+        }
+
+        .arrowIcon {
+          font-size: 20px;
+          padding-right: 26px;
+        }
+
+        .sundayArrowIcon {
+          padding-right: 19px;
         }
       }
     }
-
-    // .contactInfo {
-    //   padding: 0 15px;
-    //
-    //   .title {
-    //     margin: 30px 0 12px 0;
-    //     padding: 0;
-    //     text-transform: uppercase;
-    //   }
-    //
-    //   .info {
-    //     a {
-    //       text-decoration: none;  // This removes the underline that links automatically come with.
-    //       padding: 0;  // This removes the padding from the contact info on the About Us page.
-    //       color: $fontColor;
-    //     }
-    //   }
-    // }
-    //
-    // .socialAccounts {
-    //   margin-top: 30px;
-    //   padding: 0 15px;
-    //
-    //   a {
-    //     text-decoration: none;
-    //     color: $hoverEffect;
-    //
-    //     &:hover {
-    //       border-bottom: 4px solid $hoverEffect;
-    //     }
-    //   }
-    // }
   }
 }
+
+@media (max-width: 1200px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 60vh;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 58vh;
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 57vh;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 56vh;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 50vh;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 48vh;
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 46vh;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 42vh;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 40vh;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 38vh;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 36vh;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 34vh;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 32vh;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 30vh;
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 28vh;
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 26vh;
+    }
+  }
+}
+
+// @media (max-width: 500px) {
+//   .aboutUsPage {
+//     .aboutUsImage {
+//       height: 55vh;
+//     }
+//   }
+// }
+//
+// @media (max-width: 460px) {
+//   .aboutUsPage {
+//     .aboutUsImage {
+//       height: 52vh;
+//     }
+//   }
+// }
+//
+// @media (max-width: 430px) {
+//   .aboutUsPage {
+//     .aboutUsImage {
+//       height: 48vh;
+//     }
+//   }
+// }
+
+@media (max-width: 991px) {
+  .aboutUsPage {
+    margin-bottom: 0;
+    font-size: 18px;  // This adjusts the size of the About Us content.
+
+    .aboutUsSection {
+      .blurb {
+        .blurbSpacing {
+          margin: 10px 0;  // This spaces out the blurb paragraphs.
+        }
+      }
+
+      .storeHours {
+        margin-top: 30px;  // This spaces out the store hours section from the blurb.
+
+        .storeHoursTitle {
+          font-size: 20px;
+        }
+
+        .schedule {
+          margin-top: 0;
+
+          .saturday {
+            padding-right: 77px;
+          }
+
+          .sunday {
+            padding-right: 88px;
+          }
+
+          .arrowIcon {
+            font-size: 18px;
+          }
+
+          .sundayArrowIconMediaQuery991px {
+            // font-size: 20px;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 
 /*
