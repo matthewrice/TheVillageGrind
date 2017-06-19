@@ -490,7 +490,7 @@ img {
   .footer {
     .socialIcons {
       .icon {
-        font-size: 40px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
+        font-size: 30px;  // This adjusts the size of the facebook icon.  The facebook icon was slightly larger than the instagram icon, so I targeted it separately to make the social icons the same size.
       }
     }
 
@@ -511,12 +511,12 @@ img {
       }
 
       .locationIcon {
-        font-size: 40px;
+        font-size: 30px;
         margin: 0 8px;
       }
 
       .cellPhoneIcon {
-        font-size: 45px;
+        font-size: 35px;
         position: relative;
         top: 2px;
       }
@@ -576,7 +576,7 @@ img {
     background-image: url('../images/about-us-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 72vh;
+    height: 515px;
   }
 
   .aboutUsSection {
@@ -631,7 +631,7 @@ img {
 @media (max-width: 1200px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 60vh;
+      height: 400px;
     }
   }
 }
@@ -641,22 +641,63 @@ img {
     .aboutUsImage {
       margin-top: 0;
       margin-bottom: 20px;
+      height: 480px;
     }
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 740px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 58vh;
+      height: 460px;
     }
   }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 720px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 57vh;
+      height: 450px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 440px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 430px;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 420px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 410px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 390px;
     }
   }
 }
@@ -664,31 +705,39 @@ img {
 @media (max-width: 600px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 56vh;
+      height: 380px;
     }
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 580px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 50vh;
+      height: 370px;
     }
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 560px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 48vh;
+      height: 350px;
     }
   }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 540px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 46vh;
+      height: 340px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 330px;
     }
   }
 }
@@ -696,31 +745,39 @@ img {
 @media (max-width: 500px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 42vh;
+      height: 310px;
     }
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 480px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 40vh;
+      height: 300px;
     }
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 38vh;
+      height: 280px;
     }
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 440px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 36vh;
+      height: 270px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 260px;
     }
   }
 }
@@ -728,31 +785,39 @@ img {
 @media (max-width: 400px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 34vh;
+      height: 240px;
     }
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 32vh;
+      height: 230px;
     }
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 30vh;
+      height: 220px;
     }
   }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 340px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 28vh;
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutUsPage {
+    .aboutUsImage {
+      height: 190px;
     }
   }
 }
@@ -760,35 +825,13 @@ img {
 @media (max-width: 300px) {
   .aboutUsPage {
     .aboutUsImage {
-      height: 26vh;
+      height: 180px;
     }
   }
 }
 
-// @media (max-width: 500px) {
-//   .aboutUsPage {
-//     .aboutUsImage {
-//       height: 55vh;
-//     }
-//   }
-// }
-//
-// @media (max-width: 460px) {
-//   .aboutUsPage {
-//     .aboutUsImage {
-//       height: 52vh;
-//     }
-//   }
-// }
-//
-// @media (max-width: 430px) {
-//   .aboutUsPage {
-//     .aboutUsImage {
-//       height: 48vh;
-//     }
-//   }
-// }
 
+//The following media queries adjust the layout of Lindsey's message to her customer & the store hours.
 @media (max-width: 991px) {
   .aboutUsPage {
     margin-bottom: 0;
