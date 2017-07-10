@@ -272,7 +272,7 @@ img {
 
     .mediaQuery650vwNavBarDropdown {
       .dropdown-menu {
-        top: 30px;
+        top: 33px;
       }
     }
   }
@@ -320,7 +320,21 @@ img {
   }
 }
 
-@media (max-width: 333px){
+@media (max-width: 337px){
+  .headerContent{
+    .mediaQuery650vwNavBarDropdown {
+      font-size: 22px;
+      top: 5px;
+
+      .dropdown-menu {
+        top: 25px;
+        left: 19px;
+      }
+    }
+  }
+}
+
+@media (max-width: 334px){
   .headerContent{
     .companyIdentifiers {
       .companyLogo {
@@ -335,7 +349,7 @@ img {
     }
 
     .mediaQuery650vwNavBarDropdown {
-      top: 0;
+      top: 3px;
 
       .dropdown-menu {
         min-width: 90px;
@@ -915,6 +929,58 @@ img {
   padding-left: 7.5px;
 }
 
+@media (max-width: 991px) {
+  .extendedMenuImage {
+    position: relative;
+    top: -8px;
+  }
+}
+
+@media (max-width: 720px) {
+  .extendedMenuImage {
+    position: relative;
+    top: -15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .extendedMenuImage {
+    position: absolute;
+    top: 58px;
+  }
+}
+
+@media (max-width: 600px) {
+  .extendedMenuImage {
+    top: 54px;
+  }
+}
+
+@media (max-width: 485px) {
+  .extendedMenuImage {
+    top: 52px;
+  }
+}
+
+@media (max-width: 375px) {
+  .extendedMenuImage {
+    top: 46px;
+  }
+}
+
+@media (max-width: 334px) {
+  .extendedMenuImage {
+    top: 44px;
+  }
+}
+
+@media (max-width: 313px) {
+  .extendedMenuImage {
+    top: 43px;
+  }
+}
+
+
 .backCounterImage {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -943,4 +1009,44 @@ img {
 
 .menuBoardsImage {
   padding-top: 15px;
+}
+
+@media (max-width: 334px) {
+  .outsideOfShopImage {
+    padding-right: 6px;
+  }
+
+  .extendedMenuImage {
+    padding-left: 6px;
+  }
+
+  .backCounterImage {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .closeupOfEspressoMachingImage {
+    padding-right: 6px;
+  }
+
+  .pouringLatteImage {
+    padding-left: 6px;
+  }
+
+  .latteImage {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .mapOnWallImage {
+    padding-right: 6px;
+  }
+
+  .menuImage {
+    padding-left: 6px;
+  }
+
+  .menuBoardsImage {
+    padding-top: 12px;
+  }
 }
