@@ -7,11 +7,9 @@ var FooterComponent = React.createClass ({
       <div className="col-md-12 footer">
         <div className="socialIcons">
           <a className="facebookIcon icon" href="https://www.facebook.com/thevillagegrind/" target="_blank">
-            {/*<div className="facebookIcon"></div>*/}
             <i className="fa fa-facebook-square" aria-hidden="true"></i>
           </a>
           <a className="instagramIcon icon" href="https://www.instagram.com/thevillagegrind/" target="_blank">
-            {/*<div className="instagramIcon"></div>*/}
             <i className="fa fa-instagram" aria-hidden="true"></i>
           </a>
         </div>

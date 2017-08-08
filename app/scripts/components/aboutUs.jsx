@@ -15,7 +15,7 @@ var AboutUsComponent = React.createClass({
             <div className="blurb">
               <p>Hello friends!</p>
               <p className="blurbSpacing">We're The Village Grind! We opened our
-                doors in January of 2014 on Pendleton Street in the Village of West
+                doors in January of 2015 on Pendleton Street in the Village of West
                 Greenville. Our space is quaint and colorful and our friendly staff
                 can't wait to show you around our tasty menu. We feature coffee from
                 several local roasters and pastries that are baked fresh every morning!
