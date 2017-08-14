@@ -6,11 +6,11 @@ var FooterComponent = require('./footer.jsx');
 
 
 var AboutUsComponent = React.createClass({
-  constructor(){
+  googleAnalytics: function(){
     ReactGA.initialize('UA-104489668-1');
     // This just needs to be called once since we have no routes in this case.
     ReactGA.pageview(window.location.pathname);
-  };
+  },
   render: function(){
     return (
       <div>
